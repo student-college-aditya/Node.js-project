@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Aditya-Devloper portfolio</title>
+</head>
+<body>
+
+   <div id="header">
+        <nav>
+            <div class="left">Aditya Kumar Portfolio</div>
+            <div class="right">
+                <ul>
+                   <li><a href="#header">Home</a></li>
+                   <li><a href=".about">About us</a></li>
+                   <li><a href="/">Services</a></li>
+                   <li><a href="/">Projects</a></li>
+                   <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My Name is <span class="purple">Aditya Kumar</span>
+                <div>I am a</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="photoshop img.png" alt="">
+            </div>
+            
+        </section>
+    </main>
+
+    <div class="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image1.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>Ambitious and adaptable graduate with a Bachelor's degree in B.com. Possessing strong interpersonal skills and a passion for [Industry], I am eager to kickstart my career and contribute positively to a forward-thinking organization. I am an organised, efficient and hard working person, and am willing to discover and accept new ideas which can be put into practice effectively. I am a good listener and learner, able to communicate well with a group and on an individual level. I am able to motivate and direct my talents and skills to meet objectives.</p>
+                    <div class="tab-titles">
+                        <p class="Tab-links active-links" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="Tab-links" onclick="opentab(event, 'Projects')">Projects</p>
+                        <p class="Tab-links" onclick="opentab(event, 'Education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Devlopement </span><br>
+                                Html,
+                                css, 
+                                javascript, 
+                                React.js, 
+                                Express.js, 
+                                Git and GitHub, 
+                                MongoDB, 
+                                MySQL 
+                                </li>
+                            <li><span>Graphic Desiging </span><br>Photoshop</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Projects">
+                        <ul>
+                            <li><span>Creating MY Music App </span><br><a>git@github.com:student-college-aditya/Music-app.git</a></li>
+                            <li><span>My Own Portfolio </span><br><a>git@github.com:student-college-aditya/portfolio.git</a></li>
+                            <li><span>My Minor Project </span><br><a>https://github.com/student-college-aditya?tab=repositories</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Education">
+                        <ul>
+                            <li><span>2019-20</span><br>10th Passed from CBSE Board</li>
+                            <li><span>2021-22</span><br>12th Passed from CBSE Board</li>
+                            <li><span>2023-24</span><br>Course Web devlopment from Oxford Institute</li>
+                            <li><span>2024</span><br>Persuing B.Com in DU Sol</li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>ajha48450@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8076386734</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/reels/DC1Ukkxz_E6/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form method="post">
+                        <input type="text" name="name" placeholder="Your Name", required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                       <textarea name="Message" rows="6" placeholder="Your Message"></textarea> 
+                       <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="portfolio.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ["Web Devloper"],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
