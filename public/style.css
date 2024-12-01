@@ -68,10 +68,11 @@ nav ul li a:hover{
 }
 
 .rightSection img{
-    width: 104vh;
-    height: 123vh;
+    width: 100vh;
+    height: 100vh;
     margin-left: -172px;
     margin-top: -85px;
+    opacity: 1;
 }
 
 .purple{
